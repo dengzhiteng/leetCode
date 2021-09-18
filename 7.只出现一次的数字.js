@@ -4,7 +4,11 @@
  * @return {number}
  */
 const singleNumber = function (nums) {
-  for (let i = 0; i < nums.length; i++) {}
+  let ans = 0;
+  for (let i = 0; i < nums.length; i++) {
+    ans ^= nums[i];
+    console.log(ans);
+  }
+  return ans;
 };
-
-console.log(singleNumber([3, 1, 1]));
+singleNumber([1, 1, 2]);
